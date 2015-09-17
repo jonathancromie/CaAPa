@@ -7,12 +7,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaAPa.Droid", "Droid\CaAPa.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaAPa.UITests", "UITests\CaAPa.UITests.csproj", "{BE5F6DAF-E9EF-487E-8BA7-DF619F756ED2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaAPa.Data", "CaAPa.Data\CaAPa.Data.csproj", "{26E2B143-0E02-439B-BBA0-AE6D8FF23CBB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26E2B143-0E02-439B-BBA0-AE6D8FF23CBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26E2B143-0E02-439B-BBA0-AE6D8FF23CBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26E2B143-0E02-439B-BBA0-AE6D8FF23CBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26E2B143-0E02-439B-BBA0-AE6D8FF23CBB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8748BA11-78C8-49FA-9F1E-1130147EA999}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8748BA11-78C8-49FA-9F1E-1130147EA999}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8748BA11-78C8-49FA-9F1E-1130147EA999}.Release|Any CPU.ActiveCfg = Release|Any CPU
