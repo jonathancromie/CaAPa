@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<BaseView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="NoteTaker1.RemindersHomePage">
+	<!--<StackLayout Padding = "10,20,10,30" Orientation="Vertical" >
+		<Label Text="Reminders"
+       VerticalOptions="Center"
+       FontAttributes="Bold"
+       FontSize="Large" />
+		<Button HorizontalOptions = "CenterAndExpand" Text="Reminders" Command = "{Binding RemindersButtonCommand}"/>
+		<Button HorizontalOptions = "CenterAndExpand" Text="Prompting" Command = "{Binding PromptingButtonCommand}"/>
+		<Button HorizontalOptions = "CenterAndExpand" Text="Mapping" Command = "{Binding MappingButtonCommand}"/>
+		<Button HorizontalOptions = "CenterAndExpand" Text="Settings" Command = "{Binding SettingsButtonCommand}"/>
+	</StackLayout>-->
+	<Grid ColumnSpacing="-4">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="100" />
+		</Grid.RowDefinitions>
+
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="100" />
+		</Grid.ColumnDefinitions>
+
+		<Grid.Resources>
+			<ResourceDictionary>
+				<Color x:Key="backgroundColor">Gray</Color>
+				<Color x:Key="borderColor">Red</Color>
+				<x:Double x:Key="borderWidth">1</x:Double>
+			</ResourceDictionary>
+		</Grid.Resources>
+
+		<Button x:Name="RemindersButton"
+				Text="Reminders" 
+				Grid.Row ="0" Grid.Column="0" 
+				BackgroundColor="{StaticResource backgroundColor}"
+				BorderColor="{StaticResource borderColor}"
+				BorderWidth="{StaticResource borderWidth}"
+				Command = "{Binding RemindersButtonCommand}"/>
+		<Button x:Name="PromptingButton"
+				Text="Prompting" 
+				Grid.Row ="0" Grid.Column="1" 
+				BackgroundColor="{StaticResource backgroundColor}"
+				BorderColor="{StaticResource borderColor}"
+				BorderWidth="{StaticResource borderWidth}"
+				Command = "{Binding PromptingButtonCommand}"/>
+		<Button x:Name="MappingButton"
+				Text="Mapping" 
+				Grid.Row ="0" Grid.Column="2" 
+				BackgroundColor="{StaticResource backgroundColor}"
+				BorderColor="{StaticResource borderColor}"
+				BorderWidth="{StaticResource borderWidth}"
+				Command = "{Binding MappingButtonCommand}"/>
+		<Button x:Name="SettingsButton"
+				Text="Settings" 
+				Grid.Row ="0" Grid.Column="3"
+				BackgroundColor="{StaticResource backgroundColor}"
+				BorderColor="{StaticResource borderColor}"
+				BorderWidth="{StaticResource borderWidth}"
+				Command = "{Binding SettingsButtonCommand}"/>
+		
+	</Grid>
+</BaseView>
